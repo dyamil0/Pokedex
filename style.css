@@ -1,0 +1,110 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+   
+}
+body{
+    cursor: default;
+    background-size: cover;         
+    background-attachment: fixed;  
+    background-repeat: no-repeat;  
+    background-position: center;  
+}
+
+
+h1{
+    position: relative;
+    display: inline-block;
+    font-size: 2em;
+    color: rgb(46, 46, 46);
+   
+}
+
+input {
+    text-align: left;
+    width: 4in;
+    height: 30px;
+    border-radius: 100px;
+    padding: 10px;
+    border-color: pink;
+   
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 3fr  1fr;
+}
+button{
+    cursor: pointer;
+    border: 0;
+   border-radius: 5px;
+   padding: 5px 15px 5px 15px;
+}
+button:hover{
+    box-shadow: 1px 2px 10px 3px rgba(46, 46, 46, 0.264);
+    color: white;
+    background-color: blue;
+
+}
+.pokemon-container{
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 15px;
+    
+}
+
+
+.card{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.82);
+    transition: ease-in-out 0.5s;
+    width: 150px;
+    height: 210px;
+    box-shadow: 0 1px 5px rgb(32, 33, 31);
+    
+}
+.card:hover {
+    background-color:#ffffff;
+    box-shadow: 0 1px 15px rgba(15, 65, 194, 0.608);
+    transition: ease-in .5s;
+    transform: scale(20px ,-20px)
+}
+.card:hover img{
+   padding: 5px;
+   transition: 0.3s;
+}
+
+.card img{
+   filter: drop-shadow(0px 0px 10px rgb(24, 92, 2));
+    width: 100%;
+    padding: 15px;
+    transition: 0.3s;
+}
+.card ul{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    list-style: none;
+}
+.pokemon-id{
+    font-size: 10px;
+}
+.pokemon-name{
+
+    text-transform: capitalize;
+    color: #1420d2ca;
+    font-weight: bold;
+}
+
+.pokemon-type span{
+    color: white;
+    font-size: 12px;
+}
+/*TYPINGS*/
+.card span{
+    margin: 1px;
+    padding: 2px 4px;
+    border-radius: 2px;
+    display: inline-block;   
+}
